@@ -1,0 +1,513 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: #383838;
+    background: url(/public/sites/images/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.check-times-success {
+    color: green;
+    text-align: center;
+    font-size: 5rem;
+}
+
+a {
+    color: #7b9d6f;
+    text-decoration: none;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+.timeline-steps .timeline-step:not(:last-child):after {
+    content: "";
+    display: block;
+    border-top: .25rem dotted #12c79a;
+    width: 3.46rem;
+    position: absolute;
+    left: 7.5rem;
+    top: .3125rem
+}
+
+.timeline-steps .timeline-step:not(:first-child):before {
+    content: "";
+    display: block;
+    border-top: .25rem dotted #12c79a;
+    width: 3.8125rem;
+    position: absolute;
+    right: 7.5rem;
+    top: .3125rem
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center;
+    color: #fff;
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #016b42
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #fff;
+    border: 1px solid #016b42;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+.timeline-steps .timeline-content .inner-circle.active::before {
+    content: "";
+    background-color: #12c79a;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+.logo {
+    text-align: center;
+}
+
+.name-company {
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.p-max {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px #016b42;
+}
+
+#kyc {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #fff;
+    text-align: left;
+    padding: 50px 80px;
+    box-shadow: 0px 5px 10px gray;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#kyc h1 {
+    font-weight: 600;
+    text-align: center;
+}
+
+#kyc select {
+    max-width: 250px;
+    height: 50px;
+    font-size: 22px;
+    margin: 0 auto;
+    border-radius: 100px;
+    padding-left: 20px;
+}
+
+#kyc select option {
+    width: 100%;
+}
+
+.pre-next {
+    width: 100%;
+    height: auto;
+}
+
+#kyc button.btn-next {
+    padding: 10px 50px;
+    background: #12c79a;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 40px;
+    float: right;
+    box-shadow: 0px 0px 10px #016b42;
+}
+
+#kyc button.btn-pre {
+    padding: 10px 50px;
+    background: #fff;
+    border-radius: 100px;
+    color: #12c79a;
+    border: 1px solid #12c79a;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: left;
+    box-shadow: 0px 0px 10px #016b42;
+}
+
+#kyc a.btn-next {
+    padding: 10px 50px;
+    background: #12c79a;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 40px;
+    float: right;
+    box-shadow: 0px 0px 10px #016b42;
+}
+
+#kyc .form-group {
+    text-align: center;
+}
+
+#kyc .form-group input {
+    border: 1px solid #c4c4c4;
+}
+
+#kyc .form-group span {
+    font-size: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#kyc form .form-group .form-control {
+    height: 50px;
+    font-size: 18px;
+}
+
+article {
+    background: transparent;
+    display: none;
+}
+
+article.on {
+    display: block;
+}
+
+#kyc .custom label {
+    background-color: #12c79a;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 5px 10px;
+}
+
+.custom .actual-btns {
+    background-color: #12c79a;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.custom .actual-take {
+    background-color: #12c79a;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 30px 25px;
+    border-radius: 50%;
+}
+
+.custom .actual-take:hover {
+    background-color: #fff;
+    color: #12c79a;
+    border: 1px solid #12c79a !important;
+}
+
+#file-chosen {
+    margin-left: 0.3rem;
+}
+
+.custom .actual-try {
+    background-color: #fff;
+    color: #12c79a;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    border: 1px solid #12c79a !important;
+    border-radius: 5px;
+}
+
+.custom .actual-try:hover {
+    background-color: #12c79a;
+    color: #fff;
+}
+
+.photo {
+    width: 100%;
+    height: 400px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    display: none;
+}
+
+#camera {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+
+#canvas {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 400px;
+}
+
+#checker {
+    display: none;
+    margin: 0 auto;
+}
+
+#try {
+    display: none;
+}
+
+@media screen and (max-width: 991.98px) {
+    .p-max {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    #kyc a.btn-pre {
+        font-size: 18px !important;
+        padding: 5px 30px !important;
+    }
+    #kyc a.btn-next {
+        font-size: 18px !important;
+        padding: 5px 30px !important;
+    }
+    .col-dt-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .custom .actual-take {
+        margin-top: -20px !important;
+    }
+    #canvas {
+        top: 30px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+    }
+    #kyc .bg-email {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 468.98px) {
+    #kyc {
+        padding: 50px 30px !important;
+    }
+    #kyc button.btn-pre {
+        font-size: 14px !important;
+        padding: 5px 20px !important;
+    }
+    #kyc button.btn-next {
+        font-size: 14px !important;
+        padding: 5px 20px !important;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .p-max {
+        margin-left: 10px;
+    }
+    .timeline-steps .timeline-step {
+        margin: 1rem 0 !important;
+    }
+    #kyc form .form-group .form-control {
+        font-size: 14px !important;
+    }
+    .f-12 {
+        font-size: 12px !important;
+    }
+    #back-email {
+        top: 15px;
+        left: 20px;
+        font-size: 28px !important;
+    }
+}
+
+#kyc .check {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: green;
+    font-size: 60px;
+    text-align: center;
+}
+
+.yotrip {
+    color: #FBBB4A;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#kyc h3 {
+    text-align: center;
+    color: #999999;
+    margin-top: 20px;
+}
+
+#kyc .check-times {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: red;
+    font-size: 60px;
+    text-align: center;
+}
+
+.verify {
+    text-align: left;
+}
+
+.verify .label {
+    text-align: left;
+}
+
+.verify .btn-submit {
+    width: 100%;
+    background: #12c79a;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px #05644c;
+    border: 1px solid #12c79a;
+}
+
+.verify .btn-submit:hover {
+    background: #047559;
+}
+
+.ver-content .num {
+    width: 22px;
+    max-height: 24px;
+    border-radius: 50%;
+    background: #12c79a;
+    text-align: center;
+    color: #fff;
+    margin-right: 30px;
+    box-shadow: 0 1px 5px #05644c;
+}
+
+.ver-content .text span {
+    color: gray;
+    font-size: 14px;
+}
+
+#kyc form.verify .form-group .form-control {
+    font-size: 15px !important;
+}
+
+#kyc .bg-email {
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    right: 90px;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7iLln0KgYS2jNTXAxwt03Drbs1FDXRqchyDjyqzqxRQOchv0vArC2eouewNDxqg0pitI&usqp=CAU) no-repeat;
+    background-size: cover;
+}
+
+#kyc .text-3 {
+    color: #c4c4c4;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.w-66 {
+    width: 66.66%;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.text-green {
+    font-size: 22px;
+    font-weight: 600;
+    color: green;
+}
+
+.to-upper {
+    text-transform: uppercase;
+}
+
+.report-img img {
+    width: 100%;
+    max-height: 300px;
+    height: 300px;
+}
+
+#back-email {
+    position: absolute;
+    font-size: 32px;
+    color: #12c79a;
+}
